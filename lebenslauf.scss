@@ -1,0 +1,363 @@
+body[data-page-id="96"] {
+	.section {
+		padding: 0 !important;
+		background: none !important;
+		border: none !important;
+	}
+	
+	.legend-box {
+		background: #fff !important;
+		border-radius: 8px !important;
+		padding: 20px !important;
+	}
+	
+	.uebermich-box .boxContent {
+		background-color: #fff !important;
+		border: 1px solid var(--wcfContentContainerBorder) !important;
+	}
+	
+	.lebengeschichte-box {
+		background: #fff !important;
+	}
+	
+	.lebenslauf-box {	
+		.boxContent {
+			background-color: #fff;
+			border: 1px solid var(--wcfContentContainerBorder) !important;
+		}
+	
+		.lebenslauf-interessen span {
+			color: rgba(132, 148, 172, 1);
+		}
+	
+		.box .boxContent {
+			border: none !important;
+		}
+	}
+
+	.uebermich-box {
+	padding: 0 !important;
+	background: none !important;
+	border: 0 !important;
+	
+	.boxContent {
+		padding: 20px !important;
+		border-radius: 8px !important;
+	}
+
+	.boxTitle {
+   		color: #c5bd98 !important;
+    	font-weight: bold !important;
+    	border-bottom: 1px solid #cdcbc7;
+    	padding-bottom: 10px;
+	}
+}
+
+	
+.lebenslauf-box {
+	background: none !important;
+	border: 0 !important;
+	padding: 0 !important;
+		
+	.boxContent {
+		border-radius: 8px !important;
+	}
+
+	.boxTitle {
+   		color: #c5bd98 !important;
+    	font-weight: bold !important;
+    	border-bottom: 1px solid #cdcbc7;
+    	padding-bottom: 10px;
+	}
+		
+	.box {
+		padding: 0 !important;
+		margin-top: 0 !important;
+		border: 0 !important;
+		p {
+			margin: 0 !important;
+		}
+			
+		.boxContent  {
+			border: none !important;
+		}
+	}
+		
+	.timeline-icon fa-icon[solid] {
+		font-weight: 600 !important;
+		color: #fe7b7f !important;
+		margin-top: 10px;
+	}
+		
+	.timeline-icon fa-icon[name="building"],
+	.timeline-icon fa-icon[name="heart"] {
+		margin-top: 10px !important;
+	}
+		
+	.timelineContainer .timeline:first-child::before {
+    	height: -webkit-fill-available !important;
+	}
+	
+	.timelineContainer .timeline .timeline-content {
+		padding-top: 0 !important;
+		box-shadow: none;
+	}
+	
+	.timeline-date {
+		padding-top: 0 !important;
+    	align-self: center;
+	}
+
+	dl.dataList > dd {
+		color: #0da9ef !important;
+		fa-icon[solid] {
+			font-weight: 600 !important;
+			color: green !important;
+		}
+	}
+		
+	@include screen-md-down { 
+		.timeline-icon {
+			margin: 0 0 20px 5px;
+		}
+		
+		.timeline-date {
+			text-align: center !important;
+			margin-bottom: 20px;
+		}
+	}
+		
+	.timeline-title {
+		font-size: 18px !important;
+		font-weight: bold !important;
+	}
+	
+	.content {
+		padding: 20px 0 !important;
+	}
+
+	.content_header {
+		font-weight: bold;
+    	color: rgba(125, 201, 197, 1);
+		border-bottom: 1px solid rgba(125, 201, 197, 1);
+		padding-bottom: 10px;
+	}
+                     
+	.own-timeline-text {
+		margin: 15px 0 30px 0;
+	}
+                        
+	.timelineContainer .timeline .timeline-content {
+    	padding-left: 20px;
+		width: auto !important;
+	}
+	
+	.badge-it {
+		margin-bottom: 10px;
+	}
+            
+	.timeline-title {
+		margin-bottom: 20px;
+	}
+	
+	.lebenslauf-interessen {
+		li {
+			margin: 5px 0 !important;
+		}
+		
+		span {
+			font-style: italic;
+			font-size: 12px;
+		}
+	}
+}
+
+.timelineContainer {
+	margin-top: 40px;
+
+	.timeline-content-container {
+		width: 100%;
+		padding-top: 5px;
+	}
+
+	.timeline {
+		display: flex;
+		flex-flow: row wrap;
+		width: 100%;
+		justify-content: center;
+		position: relative;
+
+		.hidden {
+			visibility: hidden;
+		}
+
+		.slide-in-up{
+			animation-name: slideUp;
+			-webkit-animation-name: slideUp;
+
+			animation-duration: 1s;
+			-webkit-animation-duration: 1s;
+
+			animation-timing-function: ease;
+			-webkit-animation-timing-function: ease;
+
+			visibility: visible !important;
+		}
+
+
+		@include screen-sm-down {
+			align-items: center;
+		}
+
+		&:not(:first-child) {
+			margin-top: 60px;
+		}
+
+		@include screen-md-up {
+			&::before {
+				position: absolute;
+				left: calc(50% - 1.5px);
+				content: "";
+				width: 3px;
+				background-color: $wcfContentBorderInner;
+				height: calc(100% + 5px);
+			}
+
+			&:not(:last-child)::before {
+				height: calc(100% + 60px);
+			}
+
+			&:last-child::after {
+				position: absolute;
+				left: calc(50% - 14.5px);
+				content: "";
+				width: 30px;
+				height: 3px;
+				background-color: $wcfContentBorderInner;
+				bottom: -7px;
+			}
+
+			&:first-child::before {
+				height: calc(100% + 80px);
+				top: -21px;
+			}
+
+		}
+
+		&.highlighted {
+			.timeline-content {
+				background-color: rgba(255, 255, 0, .2);
+
+				.timeline-title {
+					> .icon {
+						float: right;
+						color: rgba(255, 0, 0, .8);
+					}
+				}
+			}
+		}
+
+		.timeline-icon {
+			flex: 0 0 64px;
+			height: 64px;
+			border-radius: 50%;
+			box-shadow: 0 0 0 4px $wcfContentBorderInner;
+			background-color: $wcfContentBackground;
+			z-index: 20;
+			text-align: center;
+			vertical-align: middle;
+
+			> .icon {
+				margin-top: 8px;
+			}
+		}
+
+		.timeline-content {
+			padding: 5px;
+			border-radius: 0.25em;
+			box-shadow: 0 3px 0 $wcfContentBorder;
+
+			.timeline-title {
+				font-size: $wcfFontSizeTitle;
+			}
+
+			.timeline-text {
+				margin-top: 10px;
+				overflow: hidden;
+
+				img {
+					max-width: 100%;
+				}
+			}
+		}
+
+		@include screen-md-up {
+			.timeline-content-container {
+				flex: 0 0 auto;
+				width: calc(50% - 32px);
+			}
+
+			.timeline-date {
+				flex: 0 0 auto;
+				width: calc(50% - 32px);
+				padding-top: 20px;
+			}
+		}
+
+		@include screen-sm-down {
+			.timeline-date {
+				flex: 0 0 auto;
+				width: calc(100% - 64px);
+				text-align: right;
+			}
+
+			.timeline-icon {
+				order: -1;
+			}
+		}
+
+		.timeline-date {
+			color: $wcfContentDimmedText;
+		}
+
+		@include screen-md-up {
+			&:nth-child(odd) {
+				.timeline-content-container {
+					order: -2;
+
+					.timeline-content {
+						width: calc(100% - 30px);
+					}
+				}
+				.timeline-icon {
+					order: -1
+				}
+				.timeline-date {
+					padding-left: 30px;
+				}
+			}
+
+			&:nth-child(even) {
+				.timeline-content {
+					margin-left: 30px;
+				}
+				.timeline-date {
+					text-align: right;
+					padding-right: 30px;
+				}
+			}
+		}
+	}
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+}
+
+

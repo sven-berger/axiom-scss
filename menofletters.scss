@@ -1,0 +1,34 @@
+body[itemid="https://axiom.riftcore.de/supernatural/db/"]
+{
+  .superNaturalCategory {
+    .tabularListColumns.messageGroup > .columnIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    li:first-child {
+      display: none;
+    }
+
+    li {
+      border: 0 !important;
+      padding-left: 0 !important;
+    }
+
+    .entriesCategoryItemDepth1 {
+      border-bottom: 1px solid #ccc !important;
+      padding-bottom: 2px !important;
+
+      a {
+        color: var(--wcfButtonBackground);
+        font-weight: bold !important;
+        font-weight: 400 !important;
+        line-height: 1.28 !important;
+      }
+    }
+
+    .entriesCategoryItemDepth2 {
+      margin-left: 10px !important;
+    }
+  }
+}

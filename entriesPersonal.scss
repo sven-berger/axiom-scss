@@ -1,0 +1,124 @@
+#tpl_entries_entryList {
+  .contentInteractionTabs {
+    display: none;
+  }
+
+  .myPortfolioBox,
+  .againBox,
+  .hateBox,
+  .playstationCategorys,
+  .udemyCategorys,
+  .latestCourses,
+  .courseRecommendation,
+  .brawlStarsPageBox {
+    display: none;
+  }
+
+  .contentInteraction--withTabs {
+    border-bottom: 0;
+  }
+
+  .entryCardList__item__meta {
+    border-top: 0;
+  }
+}
+
+#tpl_entries_entry {
+  #entryThumbnail {
+    display: none;
+    // max-height: 500px !important;
+    // border-radius: 8px;
+    // margin-bottom: 20px;
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/category-article-list/28-projektantrag-erweiterung-eines-llm-basierten-assistenzsystems-um-eine-automatis/"]
+{
+  .entryCardList__item {
+    .label.yellow {
+      display: none;
+    }
+  }
+}
+
+#tpl_entries_entry .entry {
+  display: block !important;
+}
+
+body[itemid="https://axiom.riftcore.de/entries/entry-list/"]
+{
+  .entryCardList {
+    display: grid;
+    @include screen-lg {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    @include screen-md-down {
+      grid-column: 1 / -1 !important;
+    }
+    gap: 20px;
+
+    .entryCardList {
+      grid-template-columns: none;
+    }
+  }
+
+  .entriesWelcome {
+    border-bottom: 0 !important;
+    border-radius: 5px 5px 0 0 !important;
+  }
+
+  .entrysAllCategorys {
+    margin-top: 0 !important;
+    border-top: 0 !important;
+    border-radius: 0 0 5px 5px !important;
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/124-mein-portfolio/"]
+{
+  .myPortfolioBox {
+    display: block !important;
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/124-mein-portfolio/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/125-im-rahmen-des-praktikums/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/127-auftragsarbeiten/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/126-private-projekte/"]
+{
+  .entryCardList__item .entryCardList__item__teaser {
+    max-height: 100% !important;
+    position: static !important;
+    color: var(--wcfContentText) !important;
+  }
+
+  .discussionList__item__media {
+    @include screen-lg {
+      height: 512px !important;
+      width: 100% !important;
+      img {
+        height: 512px !important;
+        width: 100% !important;
+        border-radius: 5px !important;
+      }
+    }
+  }
+
+  .boxesContentTop,
+  .boxesContentBottom {
+    .boxContainer:not(.notGrid) {
+      display: grid;
+      @include screen-lg {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @include screen-md-down {
+        grid-column: 1 / -1 !important;
+      }
+      gap: 20px;
+
+      .entryCardList {
+        grid-template-columns: none;
+      }
+    }
+  }
+}

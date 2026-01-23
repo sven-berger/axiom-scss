@@ -1,0 +1,63 @@
+.grid2Top {
+}
+
+.grid4Top {
+  .boxesContentTop {
+    .boxContainer:not(.notGrid) {
+      display: grid;
+      @include screen-lg {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      @include screen-md-down {
+        grid-column: 1 / -1 !important;
+      }
+      gap: 20px;
+
+      .entryCardList {
+        grid-template-columns: none;
+      }
+    }
+  }
+}
+
+.grid3Bottom {
+  .boxesContentBottom {
+    .boxContainer:not(.notGrid) {
+      display: grid;
+      @include screen-lg {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      @include screen-md-down {
+        grid-column: 1 / -1 !important;
+      }
+      gap: 20px;
+
+      .entryCardList {
+        grid-template-columns: none;
+      }
+    }
+  }
+}
+
+.grid4Bottom {
+  .boxesContentBottom {
+    .boxContainer:not(.notGrid) {
+      display: grid;
+      @include screen-lg {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      @include screen-md-down {
+        grid-column: 1 / -1 !important;
+      }
+      gap: 20px;
+
+      .entryCardList {
+        grid-template-columns: none;
+      }
+    }
+  }
+}
+
+.notGrid {
+  grid-column: 1 / -1;
+}

@@ -1,0 +1,155 @@
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/142-meine-gekauften-kurse-bei-udemy/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/143-javascript/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/144-php/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/146-html-css/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/145-python/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/145-python/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/148-java/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/147-sonstiges/"]
+{
+  .boxesContentTop {
+    .boxContainer:not(.notGrid) {
+      gap: 10px;
+      display: grid;
+      @include screen-lg {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include screen-md-down {
+        grid-column: 1 / -1 !important;
+      }
+    }
+  }
+
+  .udemyCategorys {
+    display: block !important;
+    .entriesCategory {
+      .entriesCategoryItemDepth1 {
+        padding-left: 15px !important;
+      }
+
+      .entriesCategoryItemDepth2 {
+        padding-left: 35px !important;
+      }
+    }
+  }
+
+  .entryCardList {
+    gap: 20px;
+    @include screen-lg {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include screen-md-down {
+      grid-column: 1 / -1 !important;
+    }
+  }
+
+  .discussionList__item__media {
+    @include screen-lg {
+      flex: 0 0 256px !important;
+    }
+    @include screen-md-down {
+      flex: 0 0 128px !important;
+    }
+    img {
+      width: 100% !important;
+      height: auto !important;
+      border-top-left-radius: 4px !important;
+      border-bottom-left-radius: 4px !important;
+    }
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/143-javascript/"]
+{
+  .discussionList__item__labels {
+    .label.orange {
+      display: none;
+    }
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/144-php/"]
+{
+  .discussionList__item__labels {
+    .label.blue {
+      display: none;
+    }
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/145-python/"]
+{
+  .discussionList__item__labels {
+    .label.green {
+      display: none;
+    }
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/148-java/"]
+{
+  .discussionList__item__labels {
+    .label.red {
+      display: none;
+    }
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/142-meine-gekauften-kurse-bei-udemy/"]
+{
+  .latestCourses {
+    display: block !important;
+    .entryListBoxList {
+      display: block !important;
+    }
+
+    .boxUsername,
+    .separatorLeft {
+      display: none;
+    }
+  }
+
+  .courseRecommendation {
+    display: block !important;
+    .entryListBoxList.inlineList {
+      display: grid !important;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+      gap: 1.5rem !important;
+    }
+
+    .entryListBoxList.inlineList > li > a {
+      display: flex !important;
+      flex-direction: column !important;
+      height: 100% !important;
+    }
+
+    .entryListBoxList.inlineList > li > a.box24 > span img {
+      width: 100% !important;
+      height: 160px !important;
+      object-fit: cover !important;
+      display: block !important;
+    }
+
+    .entryListBoxList.inlineList > li > a.box24 > div {
+      margin-top: 20px !important;
+      h3 {
+        font-weight: bold !important;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .entryListBoxList.inlineList {
+        grid-template-columns: 1fr !important;
+      }
+
+      .entryListBoxList.inlineList > li > a.box24 > span img {
+        height: 180px !important;
+      }
+    }
+
+    small {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,122 @@
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/133-aktuelle-spiele/"]
+{
+  .discussionList__item__labels {
+    .label.yellow {
+      display: none;
+    }
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/134-die-spiele-die-ich-als-n%C3%A4chstes-spiele/"]
+{
+  .discussionList__item__labels {
+    .label.brown {
+      display: none;
+    }
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/135-meine-spiele-f%C3%BCr-die-playstation-5/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/136-meine-spiele-f%C3%BCr-die-playstation-4/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/137-meine-spiele-f%C3%BCr-die-playstation-3/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/138-meine-spiele-f%C3%BCr-die-playstation-2/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/139-meine-spiele-f%C3%BCr-die-playstation-1/"]
+{
+  .discussionList__item__labels {
+    .label.orange,
+    .label.green {
+      display: none;
+    }
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/130-meine-spiele-f%C3%BCr-die-playstation/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/131-meine-gekauften-spiele/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/132-alle-spiele/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/133-aktuelle-spiele/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/134-die-spiele-die-ich-als-n%C3%A4chstes-spiele/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/135-meine-spiele-f%C3%BCr-die-playstation-5/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/136-meine-spiele-f%C3%BCr-die-playstation-4/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/137-meine-spiele-f%C3%BCr-die-playstation-3/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/138-meine-spiele-f%C3%BCr-die-playstation-2/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/139-meine-spiele-f%C3%BCr-die-playstation-1/"]
+{
+  .entryCardList {
+    display: block !important;
+
+    a {
+      pointer-events: none;
+    }
+  }
+
+  .playstationCategorys {
+    display: block !important;
+  }
+
+  .entryItem {
+    @include screen-lg {
+      display: -webkit-box !important;
+    }
+    border: 1px solid var(--wcfSidebarBorder) !important;
+    background: #fafafa !important;
+    border-radius: 4px !important;
+  }
+
+  .discussionList__item__media {
+    @include screen-lg {
+      flex: 0 0 256px !important;
+    }
+    @include screen-md-down {
+      flex: 0 0 128px !important;
+    }
+    img {
+      width: 100% !important;
+      height: auto !important;
+      border-top-left-radius: 4px !important;
+      border-bottom-left-radius: 4px !important;
+    }
+  }
+
+  .discussionList__item {
+    padding-bottom: 0 !important;
+  }
+
+  .discussionList__item__body {
+    padding: 20px !important;
+    @include screen-md-down {
+      display: inline !important;
+    }
+  }
+
+  .discussionList__item__title {
+    margin-bottom: 10px !important;
+  }
+
+  .discussionList__item__header,
+  .discussionList__item__footer,
+  .discussionList__item__teaser {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    .entryItem {
+      flex-direction: column !important;
+    }
+
+    .discussionList__item__media {
+      width: 100% !important;
+    }
+  }
+}
+
+.playstationCategorys {
+  .entriesCategory {
+    .entriesCategoryItemDepth1 {
+      padding-left: 15px !important;
+    }
+
+    .entriesCategoryItemDepth2 {
+      padding-left: 35px !important;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.b-0 {
+  border: 0 !important;
+  border-radius: none !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.p-0 {
+  border: 0 !important;
+  padding: 0 !important;
+  img {
+    border-radius: var(--wcfBorderRadius) !important;
+  }
+}
+
+.bg-white {
+  background: #fff !important;
+}
+
+.noTitle {
+  .contentHeader {
+    display: none;
+  }
+
+  .boxesContentTop {
+    margin-top: 0 !important;
+  }
+}
+
+@include screen-md-down {
+  .desktop {
+    display: none;
+  }
+}
+
+@include screen-lg {
+  .mobile {
+    display: none;
+  }
+}

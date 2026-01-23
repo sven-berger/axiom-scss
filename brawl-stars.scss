@@ -1,0 +1,335 @@
+.thousandTrophies {
+  background: #552185 !important;
+  color: white !important;
+}
+
+body[data-page-id="87"] {
+  .boxesContentTop {
+    .boxContainer:not(.notGrid) {
+      display: grid;
+      @include screen-lg {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include screen-md-down {
+        grid-column: 1 / -1 !important;
+      }
+      gap: 10px;
+
+      .entryCardList {
+        grid-template-columns: none;
+      }
+    }
+  }
+
+  .brawl-stars-logo {
+    border: 0 !important;
+    padding: 0 !important;
+    @include screen-md-down {
+      display: none;
+    }
+    img {
+      border-radius: var(--wcfBorderRadius) !important;
+    }
+  }
+}
+
+.brawlStarsCategorys {
+  .tabularListColumns.messageGroup > .columnIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  li:first-child {
+    display: none;
+  }
+
+  li {
+    padding-left: 0 !important;
+  }
+
+  .entriesCategoryItemDepth1 {
+    padding-bottom: 2px !important;
+    border: 0 !important;
+  }
+
+  .entriesCategoryItemDepth2 {
+    margin-left: 10px !important;
+    border: 0 !important;
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/30-meine-vollst%C3%A4ndigen-brawler-mit-hyperladung/"] {
+  .entryCardList__item {
+    .label.yellow,
+    .label.green,
+    .label.brown,
+    .label.purple {
+      display: none;
+    }
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/150-meine-brawler-mit-1000-troph%C3%A4en/"] {
+  .entryCardList__item {
+    .label.yellow,
+    .label.green,
+    .thousandTrophies {
+      display: none;
+    }
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/18-zuk%C3%BCnftige-veteranen-meiner-sammlung/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/9-brawler-in-meinem-besitz/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/6-brawl-stars/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/17-meine-ausgebauten-brawler/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/30-meine-vollst%C3%A4ndigen-brawler-mit-hyperladung/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/10-hyperladung-ohne-powerlevel-11/"] {
+  .entryCardList__item__teaser {
+    display: none;
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/10-hyperladung-ohne-powerlevel-11/"] {
+  .entryCardList__item {
+    .label.purple,
+    .label.yellow,
+    .label.green {
+      display: none;
+    }
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/18-zuk%C3%BCnftige-veteranen-meiner-sammlung/"] {
+  .entryCardList__item {
+    .label.yellow,
+    .label.green,
+    .label.orange {
+      display: none;
+    }
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/9-brawler-in-meinem-besitz/"] {
+  .entryCardList__item {
+    .label.yellow,
+    .label.green {
+      display: none;
+    }
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/17-meine-ausgebauten-brawler/"] {
+  .entryCardList__item {
+    .label.yellow,
+    .label.green,
+    .label.brown {
+      display: none;
+    }
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/19-ereignisse/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/20-standard-ereignisse/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/21-erweiterte-form-der-ereignisse/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/22-sonderereignisse/"] {
+  .entryCardList__item {
+    .label.blue {
+      display: none;
+    }
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/7-die-brawler/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/8-tanks/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/11-assassinen/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/12-unterst%C3%BCtzer/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/14-damage-dealer/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/7-die-brawler/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/13-kontrollbrawler/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/15-sch%C3%BCtzen/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/16-artillerie/"] {
+  .entryCardList__item {
+    .label.yellow {
+      display: none;
+    }
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/category-article-list/29-meine-umschulung/"] {
+  .entryCardList__item {
+    .labelList {
+      display: none;
+    }
+  }
+}
+
+.buffie {
+  background: #efefef !important;
+  color: #000 !important;
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/129-hey-du-schon-wieder-t%C3%A4glich-gr%C3%BC%C3%9Ft-das-murmeltier/"] {
+  .entryCardList {
+    @include screen-lg {
+      grid-template-columns: repeat(8, 1fr);
+    }
+    @include screen-md-down {
+      grid-column: 1 / -1 !important;
+    }
+    gap: 20px;
+
+    .entryCardList {
+      grid-template-columns: none;
+    }
+
+    .entryCardList__item {
+      background: none !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+    }
+  }
+  .entryCardList__item .labelList,
+  .entryCardList__item__teaser {
+    display: none;
+  }
+
+  .againBox {
+    display: block !important;
+  }
+
+  .boxesContentBottom {
+    .boxContainer:not(.notGrid) {
+      display: grid;
+      @include screen-lg {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      @include screen-md-down {
+        grid-column: 1 / -1 !important;
+      }
+      gap: 10px;
+
+      .entryCardList {
+        grid-template-columns: none;
+      }
+    }
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/128-die-brawler-mit-denen-ich-auf-kriegsfu%C3%9F-stehe/"] {
+  .entryCardList {
+    @include screen-lg {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    @include screen-md-down {
+      grid-column: 1 / -1 !important;
+    }
+    gap: 20px;
+
+    .entryCardList {
+      grid-template-columns: none;
+    }
+
+    .entryCardList__item {
+      background: none !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+    }
+    .entryCardList__item .labelList,
+    .entryCardList__item__teaser {
+      display: none;
+    }
+  }
+
+  .boxesContentBottom {
+    .boxContainer:not(.notGrid) {
+      display: grid;
+      @include screen-lg {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      @include screen-md-down {
+        grid-column: 1 / -1 !important;
+      }
+      gap: 10px;
+
+      .entryCardList {
+        grid-template-columns: none;
+      }
+    }
+  }
+
+  .hateBox {
+    display: block !important;
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/129-hey-du-schon-wieder-t%C3%A4glich-gr%C3%BC%C3%9Ft-das-murmeltier/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/128-die-brawler-mit-denen-ich-auf-kriegsfu%C3%9F-stehe/"] {
+  .contentHeader {
+    border: 1px solid var(--wcfContentContainerBorder);
+    border-radius: var(--wcfBorderRadius);
+    background-color: var(--wcfContentContainerBackground);
+    padding: 20px;
+
+    .contentTitle {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/6-brawl-stars/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/7-die-brawler/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/8-tanks/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/11-assassinen/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/12-unterst%C3%BCtzer/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/13-kontrollbrawler/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/14-damage-dealer/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/15-sch%C3%BCtzen/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/16-artillerie/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/9-brawler-in-meinem-besitz/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/10-hyperladung-ohne-powerlevel-11/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/17-meine-ausgebauten-brawler/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/30-meine-vollst%C3%A4ndigen-brawler-mit-hyperladung/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/18-zuk%C3%BCnftige-veteranen-meiner-sammlung/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/19-ereignisse/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/20-standard-ereignisse/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/21-erweiterte-form-der-ereignisse/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/22-sonderereignisse/"],
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/150-meine-brawler-mit-1000-troph%C3%A4en/"] {
+  .brawlStarsPageBox {
+    display: block !important;
+  }
+
+  .boxesContentTop,
+  .boxesContentBottom {
+    .boxContainer {
+      display: grid;
+      @include screen-lg {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include screen-md-down {
+        grid-column: 1 / -1 !important;
+      }
+      gap: 20px;
+
+      .entryCardList {
+        grid-template-columns: none;
+      }
+    }
+  }
+
+  .entryCardList {
+    @include screen-lg {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    @include screen-md-down {
+      grid-column: 1 / -1 !important;
+    }
+    gap: 20px;
+
+    .entryCardList {
+      grid-template-columns: none;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.mainMenu .boxMenu {
+  .boxMenuDepth1,
+  .dropdownMenu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .boxMenuDepth1 {
+    border-radius: 8px !important;
+    > li {
+      flex: 1 1 200px;
+      min-width: 400px;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+      padding: 1px 0;
+    }
+
+    .boxMenuLinkTitle {
+      font-weight: bold;
+      padding: 20px 0;
+    }
+  }
+
+  .boxMenuHasChildren > .boxMenuDepth1 {
+    left: 0;
+    width: 90vw;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  .boxMenuDepth2 .boxMenuLinkTitle {
+    font-weight: normal;
+    margin: 0 !important;
+  }
+
+  // Prüfungsvorbereitung #1
+  [data-identifier="com.woltlab.wcf.generic29"] > a,
+  [data-identifier="com.woltlab.wcf.generic35"] > a,
+  [data-identifier="com.woltlab.wcf.generic46"] > a,
+  [data-identifier="com.woltlab.wcf.generic50"] > a,
+  [data-identifier="com.woltlab.wcf.generic55"] > a,
+  [data-identifier="com.woltlab.wcf.generic59"] > a,
+  [data-identifier="com.woltlab.wcf.generic65"] > a,
+  [data-identifier="com.woltlab.wcf.generic70"] > a,
+  [data-identifier="com.woltlab.wcf.generic71"] > a {
+    pointer-events: none;
+    color: var(--wcfButtonBackground) !important;
+    font-weight: bold !important;
+  }
+
+  li[data-identifier="com.woltlab.blog.BlogList"] .boxMenuDepth1,
+  li[data-identifier="com.woltlab.wbb.BoardList"] .boxMenuDepth1 {
+    display: block !important;
+    flex: none !important;
+    width: auto;
+    left: auto;
+
+    .boxMenuLinkTitle {
+      font-weight: normal !important;
+    }
+  }
+}

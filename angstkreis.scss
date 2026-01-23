@@ -1,0 +1,75 @@
+.angstkreis {
+  /* Stellschrauben */
+  --size: min(560px, 92vw); /* Gesamtgröße */
+  --radius: clamp(140px, 22vw, 215px); /* Abstand der Elemente vom Zentrum */
+  --item-count: 7;
+
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  margin: 24px auto; /* schön mittig im Content */
+  border-radius: 50%;
+}
+
+/* Kreis-Ring */
+.angstkreis::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: calc(var(--radius) * 2.2);
+  height: calc(var(--radius) * 2.2);
+  border-radius: 50%;
+  border: 2px dashed #cfcfcf;
+  opacity: 0.9;
+}
+
+/* Elemente */
+.angstkreis-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: clamp(140px, 18vw, 190px);
+  text-align: center;
+
+  padding: 12px 10px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+
+  opacity: 0;
+  transform: translate(-50%, -50%)
+    rotate(calc(360deg / var(--item-count) * var(--i)))
+    translateY(calc(-1 * var(--radius)))
+    rotate(calc(-360deg / var(--item-count) * var(--i))) scale(0.88);
+
+  transition: opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.2s ease,
+    border-color 0.2s ease;
+
+  transition-delay: calc(0.12s * var(--i));
+}
+
+.angstkreis.loaded .angstkreis-element {
+  opacity: 1;
+  transform: translate(-50%, -50%)
+    rotate(calc(360deg / var(--item-count) * var(--i)))
+    translateY(calc(-1 * var(--radius)))
+    rotate(calc(-360deg / var(--item-count) * var(--i))) scale(1);
+}
+
+.angstkreis-element:hover {
+  border-color: #0077aa;
+  box-shadow: 0 8px 28px rgba(0, 119, 170, 0.18);
+  transform: translate(-50%, -50%)
+    rotate(calc(360deg / var(--item-count) * var(--i)))
+    translateY(calc(-1 * var(--radius)))
+    rotate(calc(-360deg / var(--item-count) * var(--i))) scale(1.08);
+  z-index: 3;
+}
+
+/* Optional: spezielles Styling für "Angst" */
+.angstkreis-element.angst {
+  border-color: #ff6b6b;
+}

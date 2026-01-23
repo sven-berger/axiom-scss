@@ -1,0 +1,214 @@
+body[data-page-id="60"] {
+  .pageNavigation {
+    display: none;
+  }
+
+  .boxesContentTop {
+    .boxContainer:not(.notGrid) {
+      display: grid;
+      @include screen-lg {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include screen-md-down {
+        grid-column: 1 / -1 !important;
+      }
+
+      .entryCardList {
+        grid-template-columns: none;
+      }
+    }
+  }
+
+  .slider-1 {
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+
+    .mediaBBCode {
+      opacity: 0.8 !important;
+      border-radius: var(--wcfBorderRadius) !important;
+      img {
+        border-radius: var(--wcfBorderRadius) !important;
+      }
+    }
+  }
+
+  .slider-2 {
+    border-left: 0 !important;
+    border-bottom: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+
+    .mediaBBCode {
+      opacity: 0.8 !important;
+      img {
+        border-radius: var(--wcfBorderRadius) !important;
+      }
+    }
+  }
+
+  .mof-mobile {
+    @include screen-md-down {
+      display: block !important;
+    }
+    .spoilerBox {
+      background: #fff !important;
+    }
+  }
+
+  .dasbinich-beschreibung-1,
+  .dasbinich-beschreibung-2 {
+    .contentItemTitle {
+      color: var(--wcfButtonBackground);
+    }
+
+    .embeddedContentCategory {
+      color: var(--wcfButtonPrimaryBackground);
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+
+  .dasbinich-beschreibung-1 {
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .dasbinich-beschreibung-2 {
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    border-left: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .trennlinie,
+  hr.trennlinie {
+    margin: 30px 0;
+    height: 25px;
+    background: url(/media/7/) no-repeat center;
+    border: none;
+  }
+
+  .myStates {
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+  }
+
+  .statsFlex {
+    display: grid;
+    gap: 20px;
+
+    @include screen-lg {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .box {
+      background: #fafafa !important;
+      text-align: center;
+    }
+
+    .counter {
+      color: var(--wcfButtonBackground);
+      font-weight: bold;
+    }
+  }
+
+  .recommendedArticles {
+    .label {
+      display: none;
+    }
+
+    @include screen-lg {
+      div.entryCardList__container {
+        .entryCardList {
+          grid-template-columns: repeat(4, 1fr) !important;
+        }
+      }
+
+      article.entryCardList__item.listView__item {
+        height: 600px !important;
+      }
+
+      .entryCardList__item__teaser {
+        position: static !important;
+        max-height: 20em !important;
+      }
+    }
+
+    .teaserText {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  .boxesContentBottom {
+    .boxContainer:not(.notGrid) {
+      display: grid;
+      @include screen-lg {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @include screen-md-down {
+        grid-column: 1 / -1 !important;
+      }
+      gap: 20px;
+
+      .entryCardList {
+        grid-template-columns: none;
+      }
+    }
+  }
+
+  .favoriteQuotes {
+    display: grid !important;
+    gap: 20px !important;
+    @include screen-lg {
+      grid-template-columns: repeat(5, 1fr) !important;
+    }
+    @include screen-md-down {
+      grid-column: 1 / -1 !important;
+    }
+  }
+
+  .myMedia {
+    border-top: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    .tabMenuContent {
+      border: 0 !important;
+      padding: 0 !important;
+    }
+  }
+}
+
+@include screen-lg {
+  .statsFlex {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1920px) and (min-height: 600px) and (max-height: 1080px) {
+  .statsFlex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@include screen-md-down {
+  .statsFlex {
+    grid-column: 1 / -1 !important;
+  }
+}
+
+.statsFlex .box {
+  background: #fafafa !important;
+  text-align: center;
+}
+.statsFlex .counter {
+  color: var(--wcfButtonBackground);
+  font-weight: bold;
+}
