@@ -1,4 +1,4 @@
-name: Deploy SCSS to WoltLab (SFTP)
+name: Deploy SCSS to WoltLab (SFTP) + Clear Cache
 
 on:
   push:
@@ -12,16 +12,32 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Upload SCSS via SFTP
-        uses: appleboy/scp-action@v0.1.7
+      # Reiner SFTP-Upload (ohne SSH-Commands wie mkdir/tar/rm)
+      - name: Deploy SCSS via SFTP
+        uses: SamKirkland/FTP-Deploy-Action@v4
         with:
-          host: ${{ secrets.SFTP_HOST }}
+          server: ${{ secrets.SFTP_HOST }}
           username: ${{ secrets.SFTP_USER }}
           password: ${{ secrets.SFTP_PASSWORD }}
           port: 22
-          source: "*.scss"
-          target: "/htdocs/axiom/style/special-scss/"
-          overwrite: true
+          protocol: sftp
+
+          # Repo-Root: bei dir liegen alle *.scss direkt im Root
+          local-dir: ./
+
+          # Zielordner auf dem Server
+          server-dir: /htdocs/axiom/style/special-scss/
+
+          # Nur SCSS hochladen + typische Junk-Dateien ignorieren
+          exclude: |
+            **/.git/**
+            **/.github/**
+            **/.DS_Store
+            **/*.md
+            **/*.txt
+            **/*
+          include: |
+            **/*.scss
 
       - name: Clear WoltLab cache (trigger SCSS rebuild)
         run: |
