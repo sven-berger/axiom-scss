@@ -122,3 +122,11 @@ body[itemid="https://axiom.riftcore.de/entries/category-entry-list/126-private-p
     }
   }
 }
+
+body[itemid="https://axiom.riftcore.de/category-article-list/29-meine-umschulung/"] {
+  .entryCardList__item {
+    .labelList {
+      display: none;
+    }
+  }
+}
