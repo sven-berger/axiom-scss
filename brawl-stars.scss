@@ -333,3 +333,27 @@ body[itemid="https://axiom.riftcore.de/entries/category-entry-list/150-meine-bra
     }
   }
 }
+
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/151-meine-erw%C3%A4hnenswertesten-momente/"] {
+  .brawlStarsPageBox {
+    display: block !important;
+  }
+
+  .boxesContentTop,
+  .boxesContentBottom {
+    .boxContainer {
+      display: grid;
+      @include screen-lg {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include screen-md-down {
+        grid-column: 1 / -1 !important;
+      }
+      gap: 20px;
+
+      .entryCardList {
+        grid-template-columns: none;
+      }
+    }
+  }
+}
