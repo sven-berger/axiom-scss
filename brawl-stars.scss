@@ -157,14 +157,6 @@ body[itemid="https://axiom.riftcore.de/entries/category-entry-list/16-artillerie
   }
 }
 
-body[itemid="https://axiom.riftcore.de/category-article-list/29-meine-umschulung/"] {
-  .entryCardList__item {
-    .labelList {
-      display: none;
-    }
-  }
-}
-
 .buffie {
   background: #efefef !important;
   color: #000 !important;
@@ -246,7 +238,7 @@ body[itemid="https://axiom.riftcore.de/entries/category-entry-list/128-die-brawl
     .boxContainer:not(.notGrid) {
       display: grid;
       @include screen-lg {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
       }
       @include screen-md-down {
         grid-column: 1 / -1 !important;
@@ -261,6 +253,27 @@ body[itemid="https://axiom.riftcore.de/entries/category-entry-list/128-die-brawl
 
   .hateBox {
     display: block !important;
+  }
+
+  .rankOneTwo {
+	  padding: 0 !important;
+	  background: none !important;
+	  border: 0 !important;
+	
+	  .boxContent:not(.htmlContent) {
+      display: grid;
+      @include screen-lg {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include screen-md-down {
+        grid-column: 1 / -1;
+      }
+      gap: 10px;
+
+      .entryCardList {
+        grid-template-columns: none;
+      }
+	  }
   }
 }
 
