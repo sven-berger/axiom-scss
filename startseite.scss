@@ -3,6 +3,12 @@ body[data-page-id="60"] {
     display: none;
   }
 
+  .boxesContentTop, .boxesContentBottom {
+    .box {
+      border-radius: 15px !important;
+    }
+  }
+
   .boxesContentTop {
     .boxContainer:not(.notGrid) {
       display: grid;
