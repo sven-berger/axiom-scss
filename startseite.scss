@@ -3,6 +3,19 @@ body[data-page-id="60"] {
     display: none;
   }
 
+    .slider-1 {
+      border-top-left-radius: 15px !important;
+   }
+	
+	.slider-2 {
+      border-top-right-radius: 15px !important;
+   }
+	
+	.myMedia {
+		border-bottom-left-radius: 15px !important;
+		border-bottom-right-radius: 15px !important;
+	}
+
   .boxesContentTop {
     .boxContainer:not(.notGrid) {
       display: grid;
