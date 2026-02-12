@@ -42,7 +42,9 @@
   [data-identifier="com.woltlab.wcf.generic59"] > a,
   [data-identifier="com.woltlab.wcf.generic65"] > a,
   [data-identifier="com.woltlab.wcf.generic70"] > a,
-  [data-identifier="com.woltlab.wcf.generic71"] > a {
+  [data-identifier="com.woltlab.wcf.generic71"] > a,
+  [data-identifier="com.woltlab.wcf.generic74"] > a
+  {
     pointer-events: none;
     color: var(--wcfButtonBackground) !important;
     font-weight: bold !important;
