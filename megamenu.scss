@@ -50,6 +50,12 @@
     font-weight: bold !important;
   }
 
+  [data-identifier="com.woltlab.wcf.generic74"] > .boxMenuDepth1 {
+	  display: block !important;
+	  max-width: auto !important;
+	  width: auto !important;
+  }
+
   li[data-identifier="com.woltlab.blog.BlogList"] .boxMenuDepth1,
   li[data-identifier="com.woltlab.wbb.BoardList"] .boxMenuDepth1 {
     display: block !important;
