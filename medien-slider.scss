@@ -2,7 +2,7 @@
   overflow: hidden;
   position: relative;
   display: flex;
-  border-radius: 8px;
+  border-radius: 15px;
 }
 
 @media screen and (min-width: 1025px), print {
@@ -30,7 +30,7 @@
 }
 
 .slider-list li {
-  border-radius: 8px !important;
+  border-radius: 15x !important;
   margin: 0 5px !important;
 }
 
