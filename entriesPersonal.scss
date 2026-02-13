@@ -23,8 +23,7 @@
   }
 }
 
-body[itemid="https://axiom.riftcore.de/category-article-list/28-projektantrag-erweiterung-eines-llm-basierten-assistenzsystems-um-eine-automatis/"]
-{
+body[itemid="https://axiom.riftcore.de/category-article-list/28-projektantrag-erweiterung-eines-llm-basierten-assistenzsystems-um-eine-automatis/"] {
   .entryCardList__item {
     .label.yellow {
       display: none;
@@ -36,8 +35,7 @@ body[itemid="https://axiom.riftcore.de/category-article-list/28-projektantrag-er
   display: block !important;
 }
 
-body[itemid="https://axiom.riftcore.de/entries/entry-list/"]
-{
+body[itemid="https://axiom.riftcore.de/entries/entry-list/"] {
   .entryCardList {
     display: grid;
     @include screen-lg {
@@ -65,8 +63,7 @@ body[itemid="https://axiom.riftcore.de/entries/entry-list/"]
   }
 }
 
-body[itemid="https://axiom.riftcore.de/entries/category-entry-list/124-mein-portfolio/"]
-{
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/124-mein-portfolio/"] {
   .myPortfolioBox {
     display: block !important;
   }
@@ -75,8 +72,7 @@ body[itemid="https://axiom.riftcore.de/entries/category-entry-list/124-mein-port
 body[itemid="https://axiom.riftcore.de/entries/category-entry-list/124-mein-portfolio/"],
 body[itemid="https://axiom.riftcore.de/entries/category-entry-list/125-im-rahmen-des-praktikums/"],
 body[itemid="https://axiom.riftcore.de/entries/category-entry-list/127-auftragsarbeiten/"],
-body[itemid="https://axiom.riftcore.de/entries/category-entry-list/126-private-projekte/"]
-{
+body[itemid="https://axiom.riftcore.de/entries/category-entry-list/126-private-projekte/"] {
   .entryCardList__item .entryCardList__item__teaser {
     max-height: 100% !important;
     position: static !important;
@@ -120,4 +116,8 @@ body[itemid="https://axiom.riftcore.de/category-article-list/29-meine-umschulung
       display: none;
     }
   }
+}
+
+#tpl_entries_entry #entryThumbnail {
+  display: none;
 }
